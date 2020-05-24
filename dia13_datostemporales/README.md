@@ -24,7 +24,7 @@ El libro fue publicado hace casi trescientos años por lo que tiene los derechos
 ## Origen de los datos
 Leí mucha literatura de la peste y otras plagas, mayormente ficción y también papers. La crónica de Defoe fue una de mis lecturas: la similitud de las bases de datos me daba ganas de verlos graficados, como en los informes diarios del Twitter de Jorge Aliaga (@jorgeluisaliaga) o de Juan Andrés Fraire (@TotinFraire).
 
-Iba a pasar las tablas a una planilla, pero por suerte encontré el proyecto **“A Frightful Number!”** del _Digital Resource Center de Hofstra University_. Es hermoso. Graficaron los datos en un mapa histórico de Londres:
+Iba a pasar las tablas a una planilla, pero por suerte encontré el proyecto **“A Frightful Number!”** del _Digital Research Center de Hofstra University_. Es hermoso. Graficaron los datos en un mapa histórico de Londres:
 https://drc.hofstra.edu/projects/itinerary/plague-year/index.html
 
 Tabla de datos para clonar: https://github.com/hofstra/itinerary/blob/gh-pages/_data/a-frightful-number-plague.csv
