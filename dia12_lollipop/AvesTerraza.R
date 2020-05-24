@@ -1,4 +1,4 @@
-## Listado de aves observadas desde la terraza de casa (CABA, Argentina)
+  ## Listado de aves observadas desde la terraza de casa (CABA, Argentina)
 ## Observadora: Natalia Morandeira
 ## Anotaciones al azar, sin método de muestreo, a ojo desnudo o con binoculares: 2017-presente
 
@@ -56,6 +56,8 @@ p2 <- ggplot(data = avesterraza_familia, aes(x=reorder(Familia, n), y=n)) +
 
 p2
 
-ggsave("salida_Familia.png", plot = p, width = 7, height = 4, dpi = 300)
+ggsave("salida_Familia.png", plot = p2, width = 7, height = 4, dpi = 300)
+
+
   
 
