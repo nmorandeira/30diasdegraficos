@@ -41,7 +41,7 @@ p <- ggplot(data = avesterraza_orden, aes(x=reorder(Orden, n), y=n)) +
 
 p
 
-ggsave("salida_Orden.png", plot = p, width = 7, height = 5, dpi = 300)
+ggsave("salida_Orden.png", plot = p, width = 7, height = 4, dpi = 300)
 
 
 p2 <- ggplot(data = avesterraza_familia, aes(x=reorder(Familia, n), y=n)) +
@@ -56,6 +56,6 @@ p2 <- ggplot(data = avesterraza_familia, aes(x=reorder(Familia, n), y=n)) +
 
 p2
 
-ggsave("salida_Familia.png", plot = p, width = 7, height = 5, dpi = 300)
-
+ggsave("salida_Familia.png", plot = p, width = 7, height = 4, dpi = 300)
+  
 
