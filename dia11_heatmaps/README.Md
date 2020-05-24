@@ -1,4 +1,4 @@
-##Heatmap (mapa de calor) para explorar la asimetría y curtosis de un conjunto de muestras
+## Heatmap (mapa de calor) para explorar la asimetría y curtosis de un conjunto de muestras
 
 El código está incompleto: 
 
