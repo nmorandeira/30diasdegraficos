@@ -5,4 +5,4 @@ Gráfico de paletas (lollipop) en base al listado de aves observadas desde la te
 
 Observadora: Natalia Morandeira
 
-Anotaciones al azar, sin método de muestreo, a ojo desnudo o con binoculares: 2017-presente
+Anotaciones de especies presentes en el entorno de mi terraza, sin método de muestreo, a ojo desnudo o con binoculares: 2017-presente
