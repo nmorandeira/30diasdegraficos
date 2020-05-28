@@ -29,7 +29,11 @@ p <- ggplot(ecorregiones, aes(area = superficie, fill = porcentaje_protegido, la
   geom_treemap_text( colour = "white", place = "centre", grow = TRUE, min.size = 1) +
   theme(plot.title = element_text(face = "bold"), legend.position="bottom") +
   labs (title = "Ecorregiones de Argentina", subtitle= "Representación del territorio nacional (áreas) y Porcentaje protegido (gradiente)" , caption = "Fuente: Sistema de Información de Biodiversidad de la Administración de Parques Nacionales") +
+<<<<<<< HEAD
   scale_fill_gradient(low = "#b5dce9", high="#003333", name="Superficie protegida en áreas nacionales (%):  ")
+=======
+  scale_fill_gradient(low = "#b5dce9", high="#003333", name="Superficie protegida (%):  ")
+>>>>>>> a3670c85d2e198905701f02580585e6fc1b90028
   
 p
 
