@@ -17,14 +17,36 @@ library(tidyverse)
 # y en las columnas en qué clase fue clasificado (valor predico o clasificado)
 
 library(readr)
-matriz_conf1 <- read_csv(file = "data/class1.csv")
+matriz_conf <- read_csv(file = "data/class1.csv")
 
 library(tidyr)
 
 #lo paso de matriz cuadrada a listado
-list_conf1 <- matriz_conf1 %>% 
+list_conf <- matriz_conf1 %>% 
   pivot_longer(Agua:Sauce, "Clasificado")
-head(list_conf1)
+head(list_conf)
+
+#### Cálculo exactitud global e índice Kappa #######
+cantidad_clases <- length(matriz_conf) -1
+cantidad_clases
+
+matriz <- as.matrix(matriz_conf[, 2:(cantidad_clases+1)])
+
+diagonal.counts <- diag(matriz)
+N <- sum(matriz)
+
+#Exactitud global
+Exactitud_global <- sum(diagonal.counts) / N
+Exactitud_global
+
+row.marginal.props <- rowSums(matriz)/N
+col.marginal.props <- colSums(matriz)/N
+
+#### Cálculo de kappa (K)
+Po <- sum(diagonal.counts)/N
+Pe <- sum(row.marginal.props*col.marginal.props)
+Kappa_index <- (Po - Pe)/(1 - Pe)
+Kappa_index
 
 ### plot #########
 library(ggplot2)
@@ -34,8 +56,7 @@ library(wesanderson)
 pal <-wes_palette("Moonrise3", n = 5)
 
 
-
-ggplot(data = list_conf1, aes(axis2 = Observado, axis1 = Clasificado, y = value)) +
+ggplot(data = list_conf, aes(axis2 = Observado, axis1 = Clasificado, y = value)) +
   geom_alluvium(aes(fill = Clasificado), show.legend = FALSE) +
   geom_stratum(aes(fill = Clasificado), colour = "grey33", alpha = 0.2, show.legend = FALSE) +
   geom_text(size = 4, stat = "stratum", infer.label = TRUE) +
