@@ -57,7 +57,7 @@ p <-  ggplot(data = datos, aes(x = level, y = value, fill = fill, alpha = level)
   scale_x_discrete(breaks = NULL) +
   scale_y_continuous(breaks = NULL) +
   scale_fill_brewer(palette = "Dark2", na.translate = F) +
-  labs(x = NULL, y = NULL, title= "#NiUnaMenos - Femicidios en Argentina en los últimos cinco años", subtitle = "Total de femicidios directos y vinculados - por año y según el vínculo entre víctima y victimario", caption = "Fuente: Registro Nacional de Femicidios de La Justicia Argentina, Corte Suprema de Justicia de la Nación", fill = "Año" ) +
+  labs(x = NULL, y = NULL, title= "#NiUnaMenos - Femicidios en Argentina en los últimos cinco años", subtitle = "Total de femicidios directos y vinculados, con proceso judicial. \nPor año y según el vínculo entre víctima y victimario", caption = "Fuente: Registro Nacional de Femicidios de La Justicia Argentina, Corte Suprema de Justicia de la Nación", fill = "Año" ) +
     theme(  plot.caption = element_text(hjust = 0), panel.background = element_blank(), legend.title = element_text("Año"))
 
 p
